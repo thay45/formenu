@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captuta de leads</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+
+    <body>
+
+        <div class="conteiner">
+            <h1>Cadastros de Clientes</h1>
+
+            <form>
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name"required> 
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="socialMidia">Como nos encontrou?</label>
+                <select name="socialmidia" id="socialmidia">
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">Linkedin</option>
+                    <option value="twitter">Twitter</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+
+               <!-- Desafio colocar o botão para retornar para pagina inicial-->
+               <!--solução abaixo só funciona clicando no texto-->
+                <button type="submit"><a href="index.html">Inicio</a></button>
+
+                <!--a solução abaixo utilizada comando java script-->
+                <button onclick="window.location.href='index.html'">Ir para inicio </button>
+
+                <!--o botão abaixo não vai funcionar por conta do requiresno primeiro-->
+                <a href="outra_pagina.html"><button>PG paginas </button></a>
+                
+
+
+            </form>
+
+
+        </div>
+    
+    </body>
+
+</html>
